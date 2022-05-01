@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    height: 100vh;
+    background-color: #204b4b;
+    background-image:linear-gradient(to right, #0400ff79, #49324025), url('./pawel-czerwinski-z7prq6BtPE4-unsplash.jpg');
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* background-blend-mode: overlay; */
+    color: #fff;
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo{
+    position: relative;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+    letter-spacing: -2px;
+}
+
+.logo span{
+    font-size: 40px;
+    color: mediumspringgreen;
+    margin-left: -5px;
+}
+
+
+.intro{
+    margin: auto 0px;
+}
+
+.intro form span svg{
+    width: 24px;
+}
+
+.intro > h1 span {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.intro form {
+    background-color: #fff;
+    color: #777;
+    width: 600px;
+    max-width: 100%;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px 0px;
+}
+
+.intro form input{
+    flex: 1;
+    padding: 15px 0px;
+    border: none;
+    outline: none;
+    color: #777;
+
+}
+
+.intro form span{
+    align-self: center;
+    padding: 5px 12px 0px;
+}
+
+.intro form button{
+    width: 100px;
+    background-color: mediumseagreen;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+}
+.intro > p a{
+    border-radius: 50px;
+    padding: 4px 10px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    margin: 0px 5px;
+}
+
+/* Styles for site Navigation */
+ nav{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+
+nav .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 4%;
+}
+
+nav .top .logo{
+    color: #000;
+    top: -5px;
+}
+
+nav .top form{
+    background-color: #fff;
+    display: flex;
+    border: 1px solid #bbb;
+    align-items: center;
+    color: #777;
+    border-radius: 3px;
+    flex: 0.6;
+    margin-left: 40px;
+}
+
+nav .top form input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex: 1;
+}
+
+
+nav .top form span{
+    margin: 0px 8px;
+}
+
+nav .top form span svg{
+    width: 18px;
+    margin: 5px;
+}
+
+nav .top form button{
+    align-self: stretch;
+    width: 60px;
+    background-color: mediumseagreen;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 1px 1px mediumseagreen;
+    border-top-right-radius:3px ;
+    border-bottom-right-radius: 3px;
+}
+
+nav .top ul{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+nav .top ul li{
+    display: inline-block;
+    padding: 8px;
+}
+
+nav .top ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #777;
+  transition: 0.5s;
+}
+
+nav .top ul li a:hover{
+   color: mediumseagreen;
+}
+
+nav .top #cta{
+    padding: 8px 20px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid mediumseagreen;
+    color: mediumseagreen;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+}
+
+nav .top #cta:hover{
+    background-color: mediumseagreen;
+    color: #fff;
+}
+
+nav .bottom{
+    border: 1px solid#bbb;
+    border-left: none;
+    border-right: none;
+    padding: 0 4%;
+}
+
+nav .bottom ul{
+    display: flex;
+}
+
+nav .bottom ul li{
+    display: inline-block;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+nav .bottom ul li:hover{
+    border-bottom: 2px solid mediumseagreen;
+}
+
+nav .bottom ul li a{
+    text-decoration: none;
+    font-weight: normal;
+    color: #777;
+}
+
+nav .bottom ul li a span{
+    border: 1px solid crimson;
+    margin: 5px;color: crimson;
+    display: inline-block;
+    font-size: 12px;
+    padding: 2px 3px;
+    border-radius: 12px;
+}
+
+#pro-services{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 4%;
+}
+
+.services-container{
+    height: 345px;
+    position: relative;
+    margin: 20px 0px;
+}
+
+.services{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.service-item{
+    background-color: #000;
+    border-radius: 10px;
+    
+}
+
+.services-container button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 0 10px #0005;
+    cursor: pointer;
+}
+
+.services-container button#prev {
+    left:calc(-45px / 2);
+}
+
+.services-container button#next{
+    right: calc(-45px /2);
+}
+
+@media screen and (max-width: 600px){
+    .intro > h1 {
+        font-size: 30px;
+    }
+
+.intro > p{
+    display: flex;
+    align-items:center ;
+    flex-wrap: wrap;
+}
+}
